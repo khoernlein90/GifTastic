@@ -1,6 +1,38 @@
+button {
+	width: 100%;
+}
+h1 {
+	font-family: 'Passion One', cursive;
+	font-size: 60px;
+}
+.titleDescription {
+	font-family: 'Slabo 27px', serif;
+	font-size: 22px;
+}
 .buttonClass {
-	margin: 0 2px 5px 2px;
+	margin: 2px 0px 2px 0;
+	background-color: #1A2234;
+	color: white;
 }
 #add-animal {
-	margin: 5px;
+	width: 100px;
+}
+#imgContainer {
+	border-width: 1px;
+	border-style: solid;
+	border-color: lightgray;
+	border-radius: 25px;
+}
+
+img {
+	margin: 10px;
+	max-width: 300px;
+}
+#movie-input, #add-movie {
+	margin-bottom: 4px;
+}
+.jumbotron {
+	height: 250px;
+	background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rhqunD2Gioflxfgx/old-vintage-movie-projector-end-of-the-film-side-view_htalcxm4g_thumbnail-full01.png);
+	color: white;
 }

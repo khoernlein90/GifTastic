@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>GifTastic!</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>GifTastic!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-<div class="container text-center">
-<div class="buttons"></div>
-<div class="shannon"></div>
-    <form id="animal-form">
-      <label for="animal-input">Add an Animal</label>
-      <input type="text" id="animal-input"><br>
-
-      Button triggers new animal to be added
-      <input id="add-animal" type="submit" value="Add an Animal">
-    </form>
-</div>
-<div class="container">
-<div class="jumbotron">
-<div class="gifs-appear-here"></div>
-</div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1>Giphy Movie Search</h1>
+            <p class="titleDescription">Click on the buttons below to view some cool movie GIFs, click on the GIFs to make them pause/play, or use the search bar to add some GIFs of your own!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-s-12" id="sidebarButtons">
+                <form>
+                    <div class="input-group m-auto" id="movie-form">
+                        <input type="text" class="form-control" id="movie-input" placeholder="Movie or TV Show">
+                        <span class="input-group-btn">
+                              <button class="btn btn-danger" id="add-movie" type="submit">Search</button>
+                        </span>
+                    </div>
+                </form>
+                <!-- <button class="btn btn-primary" id="add-movie" type="submit">Add an movie</button> -->
+                <div class="buttons"></div>
+            </div>
+            <!-- END COLUMN 1 -->
+            <div class="col-md-8 col-s-12" id="imgContainer">
+                <div class="container">
+                    <div class="gifs-appear-here"></div>
+                </div>
+            </div>
+            <!-- END OF COL 2-->
+        </div>
+        <!--END OF ROW-->
+    </div>
+    <!-- END WRAPPER -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
