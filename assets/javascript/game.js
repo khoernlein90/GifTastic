@@ -8,7 +8,7 @@ $(document).on("click", function(){
 function displayMovie() {
     $(".gifs-appear-here").empty();
     var movie = $(this).attr("data-movie");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=dc6zaTOxFJmzC&limit=10";
 $('.gifs-appear-here').append('<h2 class="result_title">Now Playing: <span>' + $(this).data('movie') + ' Gifs!</span></h2>' );
     $.ajax({
         url: queryURL,
