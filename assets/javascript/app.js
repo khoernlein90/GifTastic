@@ -43,7 +43,7 @@ $('.gifs-appear-here').append('<h2 class="result_title">Now Playing: <span>' + $
         var row = $('div.gifs-appear-here > div');
 
         for (var j = 0; j < row.length; j += 2) {
-            row.slice(j, j + 2).wrapAll('<div class="row mx-auto"></div>');
+            row.slice(j, j + 2).wrapAll('<div class="row mx-auto justify-content-between"></div>');
         }
     })
 };
